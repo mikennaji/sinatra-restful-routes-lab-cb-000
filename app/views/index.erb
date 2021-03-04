@@ -1,0 +1,6 @@
+<body>
+<th>name</th><th>ingredients</th><th>cook_time</th><th>Link</th>
+<%@recipes.each do |recipe| %>
+<td><%=recipe.name%></td><td><%=recipe.ingredients%></td><td><%=recipe.cook_time%></td><td><a href="/recipes/<%=recipe.id %>"</td>
+<%end%>
+</body>
